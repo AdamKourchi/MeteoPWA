@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <title>MeteoApp</title>
+    <style>
+      body {
+        background: #51435f;
+      }
+      @media (max-width: 768px) {
+        .main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-image: url(assets/images/Moon.png);
+          background-size: contain;
+          background-attachment: scroll;
+          height: 100vh;
+        }
+      }
+      @media (min-width: 768px) {
+        .main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: start;
+          background-image: url(assets/images/Moon.png);
+          background-size: cover;
+          border: 1px solid red;
+          height: 100vh;
+        }
+      }
+      .temp {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-family: Khula;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        margin-top: 43px;
+      }
+      .temp span {
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+      .temp p {
+        color: #fff;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-right: 20px;
+      }
+      .data {
+        width: 100%;
+        bottom: 0;
+        background: #51435f;
+        position: absolute;
+        bottom: 0;
+      }
+      .top {
+        display: flex;
+        justify-content: space-between;
+      }
+      select {
+        background-color: transparent;
+        border-color: transparent;
+      }
+      hr {
+        border: none; /* Remove the default border */
+        border-top: 0.5px solid white; /* Set the desired color and height for the horizontal rule */
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+      table,
+      figure {
+        margin-bottom: 0;
+      }
+      td,
+      tr {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="temp">
+        <span id="tempN">19°</span>
+        <p id="condition">Rainy</p>
+      </div>
+      <div class="data">
+        <div class="top">
+          <div class="day">
+            <select name="" id="day">
+              <option value="">Monday</option>
+              <option value="">Tuesday</option>
+            </select>
+          </div>
+          <div class="loc">
+            <select name="" id="loc">
+              <option value="">Khemisset</option>
+              <option value="">Agadir</option>
+            </select>
+          </div>
+        </div>
+
+        <hr />
+        <figure>
+          <table>
+            <tr id="time">
+              <td>Now</td>
+              <td>13:00</td>
+              <td>14:00</td>
+              <td>15:00</td>
+              <td>15:00</td>
+              <td>15:00</td>
+              <td>15:00</td>
+              <td>Now</td>
+              <td>13:00</td>
+              <td>14:00</td>
+              <td>15:00</td>
+              <td>15:00</td>
+              <td>15:00</td>
+              <td>15:00</td>
+              <td>Now</td>
+              <td>13:00</td>
+              <td>14:00</td>
+              <td>15:00</td>
+              <td>15:00</td>
+              <td>15:00</td>
+              <td>15:00</td>
+              <td>15:00</td>
+              <td>15:00</td>
+              <td>15:00</td>
+            </tr>
+            <tr id="temps"></tr>
+          </table>
+        </figure>
+      </div>
+    </div>
+    <script src="config.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
