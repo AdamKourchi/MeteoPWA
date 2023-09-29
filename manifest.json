@@ -1,0 +1,17 @@
+{
+    "name":"MeteoPWA",
+    "short_name":"MeteoPWA",
+    "start_url":"index.html",
+    "icons":[
+        {
+            "src":"assets/images/logo.png",
+            "sizes":"72x72",
+            "type":"image/png"
+        }
+
+    ],
+    "theme_color":"#000000",
+    "background_color":"#ffffff",
+    "display":"standalone",
+    "orientation":"portrait-primary"
+}

@@ -1,0 +1,130 @@
+body {
+    background: #51435f;
+  }
+  @media (max-width: 768px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-image: url(assets/images/Moon.png);
+      background-size: contain;
+      background-attachment: scroll;
+      height: 100vh;
+    }
+  }
+  @media (min-width: 768px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      background-image: url(assets/images/Moon.png);
+      background-size: cover;
+      border: 1px solid red;
+      height: 100vh;
+    }
+  }
+  .temp {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: Khula;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 43px;
+    display: none;
+
+  }
+  .temp span {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
+  .temp p {
+    color: #fff;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 20px;
+  }
+  .data {
+    width: 100%;
+    bottom: 0;
+    background: #51435f;
+    position: absolute;
+    bottom: 0;
+    display: none;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+  }
+  select {
+    background-color: transparent;
+    border-color: transparent;
+  }
+  hr {
+    border: none; /* Remove the default border */
+    border-top: 0.5px solid white; /* Set the desired color and height for the horizontal rule */
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  table,
+  figure {
+    margin-bottom: 0;
+  }
+  td,
+  tr {
+    text-align: center;
+  }
+  .loading{
+    height: 100vh;
+    width: 100vw;
+    border: 1px solid black;
+    background-color: #51435f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
