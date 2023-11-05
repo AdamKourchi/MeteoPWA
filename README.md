@@ -7,7 +7,7 @@
 ## Overview
 
 This is a Meteo Progressive Web App for checking weather forecasts.
-This project utilizes **WeatherAPI** for fetching weather data.
+This project utilizes **<a href="https://www.weatherapi.com/">WeatherAPI</a>** for fetching weather data.
 
 ## Features
 
